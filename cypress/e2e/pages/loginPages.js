@@ -71,16 +71,6 @@ export class loginPage extends __GlobalVariable{
     }
 
     assertLogout(){
-        // Untuk assert ini hanya berjalan di browser firefox
-        // Untuk browser based chrome ketika tombol logout di klik
-        // dia tidak berfungsi dan url tetap di dashboard
-        
-        // ***** SOLUSI ***** 
-        // run lewat terminal dengan browser firefox : `npx cypress run --browser firefox`
-        // Atau dengan mengganti code pada click menjadi
-        // .click({force :true}) atau .trigger("click") > cek function logout
-        // ref : https://stackoverflow.com/questions/51254946/cypress-does-not-always-executes-click-on-element
-
         cy.url().then((url)=>{
             expect(url).to.contains(this.urlLoginPattern)
             //cy.task('log', url)
