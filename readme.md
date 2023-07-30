@@ -18,6 +18,14 @@ Install cypress
 ```sh
 npm install cypress
 ```
+
+Install mochawesome-reporter
+
+```sh
+npm i --save-dev cypress-mochawesome-reporter
+```
+
+
 ## Running tests (requires npm@5.2.0 or greater)
 
 - Cypress App 

@@ -90,7 +90,7 @@ export class Pengguna extends dashboardPage {
     this.assertUrlEdit()
     if(i_nama == true){
 
-      cy.get(this.namaPengguna).clear()
+      cy.get(this.namaPengguna).should("be.visible").clear({force:true})
       this.inputNamaPengguna(nama)
       this.clickSimpanBtn()
       this.assertAlertMsg('item diubah')

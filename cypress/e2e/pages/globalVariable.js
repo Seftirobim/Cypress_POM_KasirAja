@@ -15,7 +15,7 @@ export class __GlobalVariable{
     
     // ***** LOGIN PAGES *****
         // Elements
-        this.email = '#email'
+        this.email = 'input#email'
         this.password = '#password'
         this.loginbtn = 'login'
         this.daftarLink = 'ingin mencoba, daftar ?'
@@ -71,7 +71,7 @@ export class __GlobalVariable{
         this.MenuHapus = 'hapus'
         this.MenuHapusIndex = '[data-index="1"]'
         this.tambahPgnBtn = '[href="/users/create"]'
-        this.namaPengguna = "#nama"
+        this.namaPengguna = "input#nama"
         this.emailPengguna = "#email"
         this.passPengguna = "#password"
         this.btnSimpan = "simpan"

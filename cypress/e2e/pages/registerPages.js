@@ -14,9 +14,9 @@ export class registerPage extends loginPage{
         cy.contains(this.daftarLink).click() 
     }
 
-    inputNamaToko(nama_toko){ cy.get(this.namatoko).type(nama_toko,{force : true}) }
-    clickDaftarButton(){ cy.contains(this.daftarBtn).click() }
-    clickPassVisible () { cy.get(this.passVisible).click() }
+    inputNamaToko(nama_toko){ cy.get(this.namatoko).should("be.visible").type(nama_toko,{force : true}) }
+    clickDaftarButton(){ cy.contains(this.daftarBtn).should("be.visible").click() }
+    clickPassVisible () { cy.get(this.passVisible).should("be.visible").click() }
 
     register(nama_toko,email,password,i_namaToko = true,i_email = true,i_pass = true, btnClick = true){
         
@@ -68,7 +68,7 @@ export class registerPage extends loginPage{
         const reqLength = 12
         cy.get(this.password).invoke('val').then((data)=>{
 
-            cy.log(data.length)
+            // cy.log(data.length)
         
             if (data.length < reqLength){
                 this.assertAlertMsg(this.passMinMsg)

@@ -11,8 +11,8 @@ export class loginPage extends __GlobalVariable{
     
     // ***** Actions *****
     visitLogin(){ cy.visit(this.urlLogin) }
-    inputEmail(email){ cy.get(this.email).type(email) }   
-    inputPassword(password){ cy.get(this.password).type(password,{ force :true }) }
+    inputEmail(email){ cy.get(this.email).should("be.visible").type(email,{force : true}) }   
+    inputPassword(password){ cy.get(this.password).should("be.visible").type(password,{ force :true }) }
     clickLoginBtn(){ cy.contains(this.loginbtn).click() }
 
     login(email,pass,i_email = true,i_pass = true){
