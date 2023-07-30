@@ -1,0 +1,27 @@
+{
+  "head" : ["nama","email","role",""],
+  "addUsers" :[
+    {
+      "nama" : "Agan",
+      "email" : "agan@cnt.com",
+      "password" : "agan12345678"
+    },
+    {
+      "nama" : "Asep",
+      "email" : "asep@cnt.com",
+      "password" : "qweasdzxc123"
+    }
+  ],
+  "duplicateUsers" :[
+    {
+      "nama" : "bambang",
+      "email" : "bambang@cnt.com",
+      "password" : "qweasdzxc123"
+    },
+    {
+      "nama" : "bambang",
+      "email" : "bambang@cnt.com",
+      "password" : "qweasdzxc123"
+    }
+  ]
+}
